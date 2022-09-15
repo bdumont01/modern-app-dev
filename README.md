@@ -13,6 +13,11 @@ This git repo has been created as part of a larger overall framework that will a
 
 This demo aims to address the need for a DevSecOps framework that accelerates development, provides easy deployment options, and allows for quick and easy way to add new product features and extensions to enterprise applications.
 
+Our planning process resulted in the creation of this miro board to reflect our goals.
+
+image::docs/images/Business_Value_Demonstration_Miro_Board.png[Business_value]
+
+
 ## Business Goals
 
 1) Improve Customer Satisfaction
