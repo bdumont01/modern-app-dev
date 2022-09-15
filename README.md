@@ -37,7 +37,7 @@ The demo will illustrate the following IT goals via specific examples listed bel
 
 Take a look at the following chart to understand how users and organizations define application transformation model as well as top reasons for modernization.
 
-![Application Transformation Model](images/app-transformation-model.png)
+![Application Transformation Model](docs/images/app-transformation-model.png)
 
 ## Key Takeaways Business Values
 
