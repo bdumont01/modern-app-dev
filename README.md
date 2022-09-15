@@ -15,8 +15,7 @@ This demo aims to address the need for a DevSecOps framework that accelerates de
 
 Our planning process resulted in the creation of this miro board to reflect our goals.
 
-image::docs/images/Business_Value_Demonstration_Miro_Board.png[Business_value]
-
+![Business Value Model](docs/images/Business_Value_Demonstration_Miro_Board.png.png)
 
 ## Business Goals
 
