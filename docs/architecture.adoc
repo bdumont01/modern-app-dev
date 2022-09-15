@@ -1,0 +1,39 @@
+# Application Modernization Demonstration
+
+
+## Architecture
+
+The demo includes the following services:
+
+- **Customers**: The original Retail application from which the rest of microservices have been carved out. It still retains the business logic related to customer management. This legacy application runs on Tomcat and uses an Oracle database.
+- **Inventory**: Stores detailed information about products. Developed using Quarkus and PostgreSQL as data store. This service has been configured with the the JDK build mode for Quarkus by default.
+- **Orders**: Manages all order related entities. It stores only UIDs to refer to Products and Customers. Implemented with Spring Boot and using a PostgreSQL database.
+- **Gateway**: Access and aggregation layer for the whole application. It gets orders data and aggregates Products and Customers detailed information. Also implemented with the Spring Boot/PostgreSQL stack.
+- **Frontend**: A new front end layer developed with the React flavor of Patternfly, published on Nginx.
+
+image::docs/images/architecture.png[Architecture Diagram]
+
+## Deployment Pipeline in OCP
+
+One of the main focus areas of this demo is to showcase a modern approach for CI/CD using a set of tools and practices around the GitOps paradigm. For that, a Deployment Pipeline for the Customers application has been developed using Tekton. The following diagram depicts all tasks to be executed by the pipeline and its interaction with external systems and tools:
+
+
+image::docs/images/pipeline.png[Pipeline Diagram]
+
+Each of these tasks can be described as follows:
+
+- **Clone Repository** downloads the source code from the target Git repository.
+
+- **Build from Source** builds the application artifact from source code. This task has been tweaked to allow selecting the target subdirectory from the repository in which the target application source is available, allowing to have several application/components available in a single repository. **This way of versioning different services/components is highly discouraged**, as the optimal approach would be to have a dedicated repository for each component, since their lifecycle should be independent. Nevertheless, this choice was made to gather all demo materials on a single repository for simplicity purposes.
+
+- **Build image** uses the Dockerfile packaged on the root directory of an application to build and image and push it to the target registry. The image will be tagged with the short commit hash of the source it contains.
+
+- **Update Manifest** uses the short commit hash tag to update the application manifests in Git and point to the newly built image. Application deployment is then delegated to ArgoCD, which is continuously polling the configuration repository for changes and creates/updates all OpenShift objects accordingly.
+
+The pipeline accepts the following parameters:
+
+- **git-url**: URL of the target Git repository.
+- **git-branch**: target branch to work with. Defaults to main.
+- **app-subdir**: Subdirectory from the repository in which the application source code is stored.
+- **target-namespace**: Namespace/project in which to deploy the application.
+- **target-registry**: Registry to push the built image to. Defaults to the internal OCP registry (image-registry.openshift-image-registry.svc:5000).
