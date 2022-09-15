@@ -11,14 +11,14 @@ The demo includes the following services:
 - **Gateway**: Access and aggregation layer for the whole application. It gets orders data and aggregates Products and Customers detailed information. Also implemented with the Spring Boot/PostgreSQL stack.
 - **Frontend**: A new front end layer developed with the React flavor of Patternfly, published on Nginx.
 
-image::docs/images/architecture.png[Architecture Diagram]
+image::images/architecture.png[Architecture Diagram]
 
 ## Deployment Pipeline in OCP
 
 One of the main focus areas of this demo is to showcase a modern approach for CI/CD using a set of tools and practices around the GitOps paradigm. For that, a Deployment Pipeline for the Customers application has been developed using Tekton. The following diagram depicts all tasks to be executed by the pipeline and its interaction with external systems and tools:
 
 
-image::docs/images/pipeline.png[Pipeline Diagram]
+image::images/pipeline.png[Pipeline Diagram]
 
 Each of these tasks can be described as follows:
 
