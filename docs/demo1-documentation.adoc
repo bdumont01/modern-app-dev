@@ -6,7 +6,7 @@ This demo aims to address the need for a DevSecOps framework that accelerates de
 
 Our planning process resulted in the creation of this Miro board to reflect our goals.
 
-![Business Value Model](docs/images/Business_Value_Demonstration_Miro_Board.png)
+image::https://github.com/bdumont01/modern-app-dev/main/docs/images/Business_Value_Demonstration_Miro_Board.png[]
 
 
 ## Business Goals
@@ -31,6 +31,8 @@ Take a look at the following chart to understand how users and organizations def
 
 ![Application Transformation Model](docs/images/app-transformation-model.png)
 
+image::https://github.com/bdumont01/modern-app-dev/main/docs/images/app-transformation-model.png[]
+docs/images/app-transformation-model.png
 ## Key Takeaways Business Values
 
 * Reduce time to market by accelerating development, testing and deployment
