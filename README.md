@@ -40,5 +40,5 @@ The application deployed with this demo consists of four components:
 [Architecture Overview](docs/architecture.adoc)
 
 Existing Demonstrations
-- Rapid Application Deployment (docs/demo1-documentation.adoc)
+- [Rapid Application Deployment](docs/demo1-documentation.adoc)
 
