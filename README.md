@@ -6,12 +6,12 @@ This git repo has been created as part of a larger overall framework that will a
    * Business Value Statement
    * A Specific Scenario that should be addressed
    * The IT Value that should be demonstrated by this demo
-   * This link provides a sample output of this activity
+   * [This link](https://miro.com/app/board/uXjVOwVFwq8=/) provides a sample output of this activity
 2) An Asana Task List that provides step-by-step details on the process that the account team should go through prior to embarking on the demo
-  * A link to the template is provided here
-  * This task list has been templatized and will allow an account team to walk through the process that will lead to the type of demo that needs to be created 
+   * A link to the template is provided [here](https://app.asana.com/0/1202557019427473/list)
+   * This task list has been templatized and will allow an account team to walk through the process that will lead to the type of demo that needs to be created 
 3) A Simplified Demo that shows the business value of Red Hat products.
-  * Demo 1 has been created to show the results of this process and can be used as is
+   * [Demo 1](docs/demo1-documentation.adoc) has been created to show the results of this process and can be used as is
 
 # Technical Approach
 
