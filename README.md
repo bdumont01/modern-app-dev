@@ -37,7 +37,7 @@ The application deployed with this demo consists of four components:
   * Frontend: A new front end layer developed with the React flavor of Patternfly, published on Nginx.
 
 
-[Architecture Overview](docs/architecture.adoc)
+[Architecture Overview](docs/images/architecture.png)
 
 Existing Demonstrations
 - [Rapid Application Deployment](docs/demo1-documentation.adoc)
