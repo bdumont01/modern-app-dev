@@ -37,3 +37,45 @@ image::https://github.com/bdumont01/modern-app-dev/blob/cf69d16d6089e63c9938ff62
 * Modernization has a broad spectrum of definitions, but containerizing and automation rank high. 
 * The containerizing is a broad enough trend to encompass multiple strategies including refactoring with Microservices. 
 * Increasing scalability and reliability are key reasons for modernization.
+
+## Demo Preparation
+Perform these steps prior to conducting the demonstration
+
+  * Login to the OpenShift Web Console as User1 - https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/
+    - Once the OpenShift Console is displayed open the following urls in separate tabs
+      - Globex Retail application - https://ordersfrontend-retail-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/ 
+      - VScode - https://codeserver-codeserver-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/
+      - Pipelines - https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/k8s/ns/cicd-user1/tekton.dev~v1beta1~Pipeline/frontend-deployment
+
+  * In VScode:
+    - Navigate to modern-app-dev/frontend/src/app/AppLayout
+    - Do the thing
+    - DO NOT COMMIT THE CHANGES
+
+## Demo Execution
+This demo consists of the following steps:
+  * Show the applications current state
+  * Commit a change in VSCode
+  * Watch the Pipeline run
+  * Show the applications changed state
+
+### Show Application Current state
+
+  * Navigate to the retail application tab to show the current state of the a
+https://ordersfrontend-retail-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/ 
+  * Commit the Change
+  * Navigate to the VScode tab to see that a change needs to be committed
+https://codeserver-codeserver-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/
+  * Commit the change as described in the diagram below:
+
+### Watch the Pipeline Run
+  * Navigate to the Pipeline tab -  https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/k8s/ns/cicd-user1/tekton.dev~v1beta1~Pipeline/frontend-deployment
+  * Observe the Pipelining running until it completes.
+
+### Show Applications Changed State
+  * Navigate to the retail application tab
+https://ordersfrontend-retail-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/ 
+  * Refresh the browser to show the changed state of the application
+
+
+
