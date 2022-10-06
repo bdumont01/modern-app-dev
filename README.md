@@ -6,49 +6,39 @@ This git repo has been created as part of a larger overall framework that will a
    * Business Value Statement
    * A Specific Scenario that should be addressed
    * The IT Value that should be demonstrated by this demo
+   * This link provides a sample output of this activity
 2) An Asana Task List that provides step-by-step details on the process that the account team should go through prior to embarking on the demo
-3) A Business Value Demo
+  * A link to the template is provided here
+  * This task list has been templatized and will allow an account team to walk through the process that will lead to the type of demo that needs to be created 
+3) A Simplified Demo that shows the business value of Red Hat products.
+  * Demo 1 has been created to show the results of this process and can be used as is
 
-## Demo for Modern Application Transformation Process
+# Technical Approach
 
-This demo aims to address the need for a DevSecOps framework that accelerates development, provides easy deployment options, and allows for quick and easy way to add new product features and extensions to enterprise applications.
+When this demonstration is provisioned it will create the environment based on the Red Hat Modern Application Development Workshop.  
 
-Our planning process resulted in the creation of this miro board to reflect our goals.
+Therefore the base infrastructure will be deployed with:
 
-![Business Value Model](docs/images/Business_Value_Demonstration_Miro_Board.png)
+  * Openshift Container Platform
+  * Red Hat OpenShift Pipelines Operator 
+  * Red Hat OpenShift GitOps Operator 
 
-## Business Goals
+Additionally the infrastructure will deploy with development tools that will be used throughout the demo or demo creation:
+  * Gitea for the number of users selected
+  * VScode for the number of users selected
+  
+# Application Architecture
+The application deployed with this demo consists of four components:
 
-1) Improve Customer Satisfaction
-2) Improve Employee Satisfaction
-3) Improve Culture break down Silos between Dev, Ops and Security Teams
-4) Improve Revenue and Cost Streams
-5) Increase Market Share/Leadership position
-
-## Business to IT Goal Alignment (IT Value)
-
-The demo will illustrate the following IT goals via specific examples listed below:
-
-* **Integration**:  Self-Service Capability of Application Framework
-* **Deployment**:   Ease of Application Deployments (net-new or releases)
-* **Scalability**:  On-Demand Application scaling
-* **Reliability**:  Container Security Regardless of Location (on-prem or cloud)
-* **Developer productivity and Business Agility**: Automate CI/CD Pipeline Automation
-
-Take a look at the following chart to understand how users and organizations define application transformation model as well as top reasons for modernization.
-
-![Application Transformation Model](docs/images/app-transformation-model.png)
-
-## Key Takeaways Business Values
-
-* Reduce time to market by accelerating development, testing and deployment
-* Implement standardization and compliance
-* Modernization has a broad spectrum of definitions, but containerizing and automation rank high. 
-* The containerizing is a broad enough trend to encompass multiple strategies including refactoring with Microservices. 
-* Increasing scalability and reliability are key reasons for modernization.
-
-## Demo Details
+  * Customers: The original Retail application from which the rest of microservices have been carved out. It still retains the business logic related to customer management. This legacy application runs on Tomcat and uses an Oracle database.
+  * Inventory: Stores detailed information about products. Developed using Quarkus and PostgreSQL as data store. This service has been configured with the the JDK build mode for Quarkus by default.
+  * Orders: Manages all order related entities. It stores only UIDs to refer to Products and Customers. Implemented with Spring Boot and using a PostgreSQL database.
+  * Gateway: Access and aggregation layer for the whole application. It gets orders data and aggregates Products and Customers detailed information. Also implemented with the Spring Boot/PostgreSQL stack.
+  * Frontend: A new front end layer developed with the React flavor of Patternfly, published on Nginx.
 
 
-1. [Architecture Overview](docs/architecture.adoc)
-Demo Details (link)
+[Architecture Overview](docs/architecture.adoc)
+
+Existing Demonstrations
+- Link to our Demo
+
