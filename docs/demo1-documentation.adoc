@@ -1,13 +1,12 @@
 ## Demo 1 - Modern Application Transformation Process
-User 1 within this repo has been modified to deliver this demo.
+User1 within this repo has been modified to deliver this demo.
 
 ## Scope
 This demo aims to address the need for a DevSecOps framework that accelerates development, provides easy deployment options, and allows for a quick and easy way to add new product features and extensions to enterprise applications.
 
 Our planning process resulted in the creation of this Miro board to reflect our goals.
 
-image::https://github.com/bdumont01/modern-app-dev/main/docs/images/Business_Value_Demonstration_Miro_Board.png[]
-
+image::https://github.com/bdumont01/modern-app-dev/blob/06913e9e37e933d59194692c5b187f7ac8697de2/docs/images/Business_Value_Demonstration_Miro_Board.png[]
 
 ## Business Goals
 
@@ -29,10 +28,8 @@ The demo will illustrate the following IT goals via specific examples listed bel
 
 Take a look at the following chart to understand how users and organizations define application transformation model as well as top reasons for modernization.
 
-![Application Transformation Model](docs/images/app-transformation-model.png)
+image::https://github.com/bdumont01/modern-app-dev/blob/cf69d16d6089e63c9938ff628f6759fe318b290b/docs/images/app-transformation-model.png[]
 
-image::https://github.com/bdumont01/modern-app-dev/main/docs/images/app-transformation-model.png[]
-docs/images/app-transformation-model.png
 ## Key Takeaways Business Values
 
 * Reduce time to market by accelerating development, testing and deployment
