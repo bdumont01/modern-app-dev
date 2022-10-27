@@ -45,11 +45,11 @@ Perform these steps prior to conducting the demonstration
     - Once the OpenShift Console is displayed open the following urls in separate tabs
       - Globex Retail application - https://ordersfrontend-retail-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/ 
       - VScode - https://codeserver-codeserver-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/
-      - Pipelines - https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/k8s/ns/cicd-user1/tekton.dev~v1beta1~Pipeline/frontend-deployment
+      - Pipelines - https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/k8s/ns/cicd-user1/tekton.dev-Pipeline/frontend-deployment
 
   * In VScode:
     - Navigate to modern-app-dev/frontend/src/app/AppLayout
-    - Do the thing
+    - Upload the new logo and save the file
     - DO NOT COMMIT THE CHANGES
 
 ## Demo Execution
@@ -63,13 +63,16 @@ This demo consists of the following steps:
 
   * Navigate to the retail application tab to show the current state of the a
 https://ordersfrontend-retail-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/ 
-  * Commit the Change
+
+### Commit the Change
+
   * Navigate to the VScode tab to see that a change needs to be committed
 https://codeserver-codeserver-user1.apps.cluster-<GUID>.sandbox10.opentlc.com/
-  * Commit the change as described in the diagram below:
+
+  * Commit the Change
 
 ### Watch the Pipeline Run
-  * Navigate to the Pipeline tab -  https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/k8s/ns/cicd-user1/tekton.dev~v1beta1~Pipeline/frontend-deployment
+  * Navigate to the Pipeline tab -  https://console-openshift-console.apps.cluster-<GUID>.sandbox10.opentlc.com/k8s/ns/cicd-user1/tekton.dev-v1beta1~Pipeline/frontend-deployment
   * Observe the Pipelining running until it completes.
 
 ### Show Applications Changed State
