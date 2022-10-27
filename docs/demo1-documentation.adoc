@@ -10,13 +10,15 @@ image::https://github.com/bdumont01/modern-app-dev/blob/06913e9e37e933d59194692c
 
 ## Business Goals
 
-1) Improve Customer Satisfaction
-2) Improve Employee Satisfaction
-3) Improve Culture break down Silos between Dev, Ops and Security Teams
-4) Improve Revenue and Cost Streams
-5) Increase Market Share/Leadership position
+The demo will illustrate the following Business goals:
 
-Business to IT Goal Alignment (IT Value)
+* Improve Customer Satisfaction
+* Improve Employee Satisfaction
+* Improve Culture break down Silos between Dev, Ops and Security Teams
+* Improve Revenue and Cost Streams
+* Increase Market Share/Leadership position
+
+### Business to IT Goal Alignment (IT Value)
 
 The demo will illustrate the following IT goals via specific examples listed below:
 
